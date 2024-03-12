@@ -1,0 +1,57 @@
+.hover-images-box {
+  position: relative;
+}
+
+.hover-gallery-img {
+  display: none;
+}
+
+.hover-gallery-img.active {
+  display: block;
+}
+
+.hover-gallery {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  z-index: 1;
+  padding: 7px;
+}
+
+.hover-gallery-item {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.hover-gallery-dots {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  display: flex;
+  gap: 6px;
+}
+
+.hover-gallery-item-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.20);
+}
+
+.hover-gallery-item-dot.active {
+  width: 12px;
+  background-color: #002BDC;
+  border-radius: 100px; 
+}
+
+.recommend__item {
+  max-width: 216px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}

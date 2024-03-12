@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <a class="header__logo-box" href="#">
+              <span class="header__logo-title">Название</span>
+              <span class="header__logo-span">Аренда сцен</span>
+            </a>
+            <button class="header__catalog-open">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M10 7H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 12H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 17H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 8C6.55228 8 7 7.55228 7 7C7 6.44772 6.55228 6 6 6C5.44772 6 5 6.44772 5 7C5 7.55228 5.44772 8 6 8Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 13C6.55228 13 7 12.5523 7 12C7 11.4477 6.55228 11 6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 18C6.55228 18 7 17.5523 7 17C7 16.4477 6.55228 16 6 16C5.44772 16 5 16.4477 5 17C5 17.5523 5.44772 18 6 18Z" fill="white"/>
+              </svg>
+              Каталог
+            </button>
+            <ul class="header__nav-list">
+              <li class="header__list-item"><a class="header__list-link" href="#">О нас</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#">Портфолио</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#">Кейтеринг</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#">Контакты </a></li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <a class="header__contacts-phone" href="tel:+79111234567">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.7408 18.4036L15.3055 15.8389C15.6481 15.4963 16.1871 15.4486 16.5846 15.7258L20.1353 18.2023C20.6459 18.5584 20.7106 19.2894 20.2704 19.7296L19.8841 20.1159C19.1739 20.8261 18.1547 21.1338 17.1986 20.826C15.1336 20.1613 11.3767 18.6179 8.26175 15.503C5.14678 12.388 3.6034 8.63109 2.93871 6.56614C2.63093 5.60999 2.93859 4.59084 3.64885 3.88058L4.03512 3.49432C4.47529 3.05415 5.20634 3.11879 5.56244 3.62937L8.03888 7.18011C8.3161 7.57758 8.26844 8.11661 7.92578 8.45927L5.36113 11.0239" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>+7 (911) 123-45-67</span>
+            </a>
+            <a class="header__contacts-link" href="#">заказать звонок</a>
+            <div class="header__contacts-controls">
+              <a class="header__cart-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21.2922 5L19.9463 13.1627C19.8666 13.6457 19.4491 14 18.9596 14H7.04304C6.55355 14 6.136 13.6457 6.05636 13.1627L4.84851 5.83731C4.76887 5.35434 4.35133 5 3.86183 5H2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20Z" stroke="white" stroke-width="2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 20C18.5523 20 19 19.5523 19 19C19 18.4477 18.5523 18 18 18C17.4477 18 17 18.4477 17 19C17 19.5523 17.4477 20 18 20Z" stroke="white" stroke-width="2"/>
+                  <path d="M21 5L9 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>4</span>
+              </a>
+              <button class="header__search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M14.4121 14.4121L20 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16Z" stroke="white" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="header__burger">
+            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+              <path d="M1 1H13" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M1 6H13" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M1 11H13" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__catalog popup">
+        <div class="header__catalog-inner popup-content">
+            <button class="header__catalog-inner--hide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M17.6568 17.6569L6.34313 6.34315" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17.6569 6.34315L6.34317 17.6569" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="header__catalog-tabs">
+              <div class="header__catalog-tab catalog-tab" id="sceni">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 22V10.4491C3 10.1634 3.12215 9.89142 3.33564 9.70166L11.3356 2.59055C11.7145 2.25376 12.2855 2.25376 12.6644 2.59055L20.6644 9.70166C20.8779 9.89142 21 10.1634 21 10.4491V22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 19L20 19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 11L20 11" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Аренда сцены</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="header__catalog-tab catalog-tab" id="podium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 20C3 20.5523 3.44772 21 4 21H8C8.55228 21 9 20.5523 9 20V18C9 17.4477 9.44772 17 10 17H20C20.5523 17 21 16.5523 21 16V4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V20Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Аренда подиумов</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="header__catalog-tab catalog-tab" id="zvuk">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21 13H19C17.8954 13 17 13.8954 17 15V17C17 18.1046 17.8954 19 19 19V19C20.1046 19 21 18.1046 21 17V13C21 8.02944 16.9706 4 12 4C7.02944 4 3 8.02944 3 13V17C3 18.1046 3.89543 19 5 19V19C6.10457 19 7 18.1046 7 17V15C7 13.8954 6.10457 13 5 13H3" stroke="black" stroke-width="2"/>
+                </svg>
+                <a href="#">Звук</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="header__catalog-tab catalog-tab" id="shatr">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 21H20C20.5304 21 21.0391 20.7893 21.4142 20.4142C21.7893 20.0391 22 19.5304 22 19V13C22 10.3478 20.9464 7.8043 19.0711 5.92893C17.1957 4.05357 14.6522 3 12 3C10.6868 3 9.38642 3.25866 8.17317 3.7612C6.95991 4.26375 5.85752 5.00035 4.92893 5.92893C3.05357 7.8043 2 10.3478 2 13V19C2 19.5304 2.21071 20.0391 2.58579 20.4142C2.96086 20.7893 3.46957 21 4 21V21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 13C7 11.8954 7.89543 11 9 11H15C16.1046 11 17 11.8954 17 13V21H7V13Z" stroke="black" stroke-width="2"/>
+                </svg>
+                <a href="#">Аренда шатров</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="header__catalog-tab catalog-tab" id="media">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="20" y="6" width="12" height="16" rx="1" transform="rotate(90 20 6)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 18H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 17H20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Медиа</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="header__catalog-tab catalog-tab" id="furniture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
+                  <path d="M17 21V11C17 10.4696 16.7893 9.96086 16.4142 9.58579C16.0391 9.21071 15.5304 9 15 9H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 1L3.88 13.5C3.96468 13.828 3.96468 14.172 3.88 14.5L2 21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 14L4 14" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <a href="#">Аренда мебели</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="header__catalog-tab catalog-tab" id="generator">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2588 14.2256C6.01739 14.2256 5.9289 14.0588 6.06148 13.8526L13.594 2.1353C13.7265 1.9293 13.8338 1.96035 13.8338 2.21602V9.32069C13.8338 9.57127 14.0367 9.77441 14.2709 9.77441H18.7381C18.9795 9.77441 19.068 9.94117 18.9354 10.1474L11.4029 21.8647C11.2705 22.0707 11.1631 22.0396 11.1631 21.784V14.6793C11.1631 14.4287 10.9602 14.2256 10.726 14.2256H6.2588Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <a href="#">Аренда генераторов</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="header__catalog-tab catalog-tab" id="other">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                  <path d="M1 2.125V19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1.125 3.25C1.125 3.25 3.125 1 6.125 1C9.125 1 11.4107 3.25 13.6964 3.25C15.9821 3.25 17.125 2.125 17.125 2.125" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1.125 13.375C1.125 13.375 3.125 11.125 6.125 11.125C9.125 11.125 11.4107 13.375 13.6964 13.375C15.9821 13.375 17.125 12.25 17.125 12.25V2.125" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Прочее</a>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="header__tab-content-wrapper tabs-inner">
+              <div class="header__tab-content" data-links="sceni">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Все сцены</a>
+                    <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="#002BDC" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <ul class="tabs-inner__dropdown-list">
+                    <li><a class="tabs-inner__dropdown-link dropdown-link--active" href="#">Двухскатная</a></li>
+                    <li><a class="tabs-inner__dropdown-link" href="#">Односкатная</a></li>
+                    <li><a class="tabs-inner__dropdown-link" href="#">Арочная</a></li>
+                    <li><a class="tabs-inner__dropdown-link" href="#">С полукруглым вылетом</a></li>
+                    <li><a class="tabs-inner__dropdown-link" href="#">Сценический комплекс</a></li>
+                    <li><a class="tabs-inner__dropdown-link" href="#">Без крыши</a></li>
+                  </ul>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Пультовая башня</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Подъемник-элеватор</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Спецэффекты</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Надувная сцена</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__tab-content" data-links="podium">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Подиумы</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Автоподиумы</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Круглые подиумы</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__tab-content" data-links="zvuk">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 1</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 2</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 3</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__tab-content" data-links="shatr">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 1</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 2</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 3</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 4</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__tab-content" data-links="media">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 1</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 2</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 3</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 4</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 5</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__tab-content" data-links="furniture">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Подиумы</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Автоподиумы</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Круглые подиумы</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__tab-content" data-links="generator">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 1</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 2</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 3</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__tab-content" data-links="other">
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 1</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 2</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 3</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 4</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 5</a>
+                  </div>
+                </div>
+                <div class="tabs-inner__dropdown-item dropdown-item">
+                  <div class="tabs-inner__dropdown-head">
+                    <a href="#">Ссылка 6</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="mobile-drawer popup">
+        <div class="mobile-drawer__content">
+          <button class="mobile-drawer__btn-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M17.6569 17.6568L6.34316 6.34309" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+              <path d="M17.6568 6.34309L6.34314 17.6568" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="mobile-drawer__content-title">Каталог</div>
+          <div class="mobile-drawer__links-box">
+            
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 22V10.4491C3 10.1634 3.12215 9.89142 3.33564 9.70166L11.3356 2.59055C11.7145 2.25376 12.2855 2.25376 12.6644 2.59055L20.6644 9.70166C20.8779 9.89142 21 10.1634 21 10.4491V22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 19L20 19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 11L20 11" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Аренда сцены</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <div class="mobile-drawer__sub-dropdown dropdown-item">
+                  <div class="sub-dropdown__head">
+                    <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                    <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <ul class="sub-dropdown__list">
+                    <li><a class="link-active" href="#">Двухскатная</a></li>
+                    <li><a href="#">Односкатная</a></li>
+                    <li><a href="#">Арочная</a></li>
+                    <li><a href="#">С полукруглым вылетом</a></li>
+                    <li><a href="#">Сценический комплекс</a></li>
+                    <li><a href="#">Без крыши</a></li>
+                  </ul>
+                </div>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 20C3 20.5523 3.44772 21 4 21H8C8.55228 21 9 20.5523 9 20V18C9 17.4477 9.44772 17 10 17H20C20.5523 17 21 16.5523 21 16V4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V20Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Аренда подиумов</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21 13H19C17.8954 13 17 13.8954 17 15V17C17 18.1046 17.8954 19 19 19V19C20.1046 19 21 18.1046 21 17V13C21 8.02944 16.9706 4 12 4C7.02944 4 3 8.02944 3 13V17C3 18.1046 3.89543 19 5 19V19C6.10457 19 7 18.1046 7 17V15C7 13.8954 6.10457 13 5 13H3" stroke="black" stroke-width="2"/>
+                </svg>
+                <a href="#">Звук</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 21H20C20.5304 21 21.0391 20.7893 21.4142 20.4142C21.7893 20.0391 22 19.5304 22 19V13C22 10.3478 20.9464 7.8043 19.0711 5.92893C17.1957 4.05357 14.6522 3 12 3C10.6868 3 9.38642 3.25866 8.17317 3.7612C6.95991 4.26375 5.85752 5.00035 4.92893 5.92893C3.05357 7.8043 2 10.3478 2 13V19C2 19.5304 2.21071 20.0391 2.58579 20.4142C2.96086 20.7893 3.46957 21 4 21V21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 13C7 11.8954 7.89543 11 9 11H15C16.1046 11 17 11.8954 17 13V21H7V13Z" stroke="black" stroke-width="2"/>
+                </svg>
+                <a href="#">Аренда шатров</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="20" y="6" width="12" height="16" rx="1" transform="rotate(90 20 6)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 18H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 17H20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Медиа</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
+                  <path d="M17 21V11C17 10.4696 16.7893 9.96086 16.4142 9.58579C16.0391 9.21071 15.5304 9 15 9H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 1L3.88 13.5C3.96468 13.828 3.96468 14.172 3.88 14.5L2 21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 14L4 14" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <a href="#">Аренда мебели</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2588 14.2256C6.01739 14.2256 5.9289 14.0588 6.06148 13.8526L13.594 2.1353C13.7265 1.9293 13.8338 1.96035 13.8338 2.21602V9.32069C13.8338 9.57127 14.0367 9.77441 14.2709 9.77441H18.7381C18.9795 9.77441 19.068 9.94117 18.9354 10.1474L11.4029 21.8647C11.2705 22.0707 11.1631 22.0396 11.1631 21.784V14.6793C11.1631 14.4287 10.9602 14.2256 10.726 14.2256H6.2588Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                <a href="#">Аренда генераторов</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+
+            <div class="mobile-drawer__dropdown-item dropdown-item">
+              <div class="mobile-drawer__dropdown-head">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                  <path d="M1 2.125V19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1.125 3.25C1.125 3.25 3.125 1 6.125 1C9.125 1 11.4107 3.25 13.6964 3.25C15.9821 3.25 17.125 2.125 17.125 2.125" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1.125 13.375C1.125 13.375 3.125 11.125 6.125 11.125C9.125 11.125 11.4107 13.375 13.6964 13.375C15.9821 13.375 17.125 12.25 17.125 12.25V2.125" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="#">Прочее</a>
+                <svg class="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <ul class="tabs-inner__dropdown-list">
+                <a class="mobile-drawer__dropdown-link" href="#">Все сцены</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Пультовая башня</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Подъемник-элеватор</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Спецэффекты</a>
+                <a class="mobile-drawer__dropdown-link" href="#">Надувная сцена</a>
+              </ul> 
+            </div>
+          
+          </div>
+          <nav class="mobile-drawer__nav">
+            <ul class="mobile-drawer__nav-list">
+              <li>
+                <a class="mobile-drawer__nav-list-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 20C4 17 8 17 10 15C11 14 8 14 8 9C8 5.667 9.333 4 12 4C14.667 4 16 5.667 16 9C16 14 13 14 14 15C16 17 20 17 20 20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  О нас
+                </a>
+              </li>
+              <li>
+                <a class="mobile-drawer__nav-list-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3L6.7396 1.8906C7.11053 1.3342 7.73499 1 8.4037 1H11.5963C12.265 1 12.8895 1.3342 13.2604 1.8906L14 3H19V14H1V3H6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 11C11.6569 11 13 9.65685 13 8C13 6.34315 11.6569 5 10 5C8.34315 5 7 6.34315 7 8C7 9.65685 8.34315 11 10 11Z" stroke="black" stroke-width="2"/>
+                  </svg>
+                  Портфолио
+                </a>
+              </li>
+              <li>
+                <a class="mobile-drawer__nav-list-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 4V20" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 12C18 12 15 11 15 8C15 5 18 4 18 4V20" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 4V7C5 8.65685 6.34315 10 8 10V10C9.65685 10 11 8.65685 11 7V4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Кейтеринг
+                </a>
+              </li>
+              <li>
+                <a class="mobile-drawer__nav-list-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 6L11.3356 13.4095C11.7145 13.7462 12.2855 13.7462 12.6644 13.4095L21 6" stroke="black" stroke-width="2"/>
+                    <rect x="2" y="5" width="20" height="14" rx="1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="search-popup popup">
+        <div class="search-popup__content">
+          <button class="search-popup__btn-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M17.6569 17.6569L6.34319 6.34315" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+              <path d="M17.6568 6.34315L6.34311 17.6569" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="search-popup__input-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.4121 14.4121L20 20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16Z" stroke="black" stroke-width="2"/>
+            </svg>
+            <input class="search-popup__input" type="text" placeholder="Поиск по сайту">
+          </div>
+          <div class="search-popup__content-title">Популярные категории</div>
+          <a class="search-popup__link" href="#">
+            Аренда сцены
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a class="search-popup__link" href="#">
+            Аренда подиумов
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a class="search-popup__link" href="#">
+            Аренда шатров
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a class="search-popup__link" href="#">
+            Звук
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a class="search-popup__link" href="#">
+            Аренда мебели
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M10 18L15.2929 12.7071C15.6834 12.3166 15.6834 11.6834 15.2929 11.2929L10 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main product-page">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li><a href="#">Главная</a></li>
+            <li>-</li>
+            <li><a href="#">Аренда сцены</a></li>
+            <li>-</li>
+            <li><a href="#">Сцены двухскатные</a></li>
+            <li>-</li>
+            <li><span>Сцена двускатная 6х8 м</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="product">
+        <div class="container">
+          <h1 class="product__title">Сцена двускатная 6х8 м</h1>
+          <div class="product__subtitle">Артикул: 1234</div>
+          <div class="product__inner">
+            <div class="product__slider-box">
+              <div class="product__small-slider small-slider">
+                <div class="swiper-wrapper">
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img1.jpg" alt="">
+                  </div>
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img2.jpg" alt="">
+                  </div>
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img3.jpg" alt="">
+                  </div>
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img4.jpg" alt="">
+                  </div>
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img5.jpg" alt="">
+                  </div>
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img6.jpg" alt="">
+                  </div>
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img5.jpg" alt="">
+                  </div>
+                  <div class="small-slider__item swiper-slide">
+                    <img src="images/product-slider/img6.jpg" alt="">
+                  </div>
+                </div>
+                <div class="small-slider__items-amount">+<span>5</span></div>
+              </div>
+              <div class="product__big-slider big-slider">
+                <div class="swiper-wrapper">
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img1.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img2.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img3.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img4.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img5.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img6.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img5.jpg" alt="">
+                  </a>
+                  <a class="big-slider__item swiper-slide" href="#">
+                    <img src="images/product-slider/img6.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product__content">
+              <div class="product__content-head">
+                <div class="product__price-wrapper price-wrapper">
+                  <div class="price-wrapper__head">от <span>73 500 ₽</span></div>
+                  <div class="price-wrapper__box">
+                    <div class="price-wrapper__box-item">
+                      <div>1 день</div>
+                      <span>73 500 ₽</span>
+                    </div>
+                    <div class="price-wrapper__box-item">
+                      <div>2 день</div>
+                      <span>72 500 ₽</span>
+                    </div>
+                    <div class="price-wrapper__box-item">
+                      <div>3 день</div>
+                      <span>70 500 ₽</span>
+                    </div>  
+                  </div>
+                </div>
+                <button class="content-head__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21.2922 5L19.9463 13.1627C19.8666 13.6457 19.4491 14 18.9596 14H7.04304C6.55355 14 6.136 13.6457 6.05636 13.1627L4.84851 5.83731C4.76887 5.35434 4.35133 5 3.86183 5H2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 20C18.5523 20 19 19.5523 19 19C19 18.4477 18.5523 18 18 18C17.4477 18 17 18.4477 17 19C17 19.5523 17.4477 20 18 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16 7H10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  В корзину 
+                </button>
+              </div>
+              <div class="product__recommend-item recommend-item">
+                <div class="recommend-item--clickable">
+                  <div class="recommend-item__img">
+                    <img src="images/product/recommend-img.jpg" alt="">
+                  </div>
+                  <div class="recommend-item__text-box">
+                    <div class="recommend-item__title">
+                      Сцена арочная 6х8 м
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="#BDBDBD"/>
+                        <path d="M8 12V9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C7.44772 4 7 4.44772 7 5C7 5.55228 7.44772 6 8 6C8.55228 6 9 5.55228 9 5C9 4.44772 8.55228 4 8 4Z" fill="white"/>
+                      </svg>
+                    </div>
+                    <div class="recommend-item__price"><span>от</span><span class="recommend-item__price-span">84 000 ₽</span><span>/ день</span></div>
+                  </div>
+                </div>
+                <button class="recommend-item__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21.2922 5L19.9463 13.1627C19.8666 13.6457 19.4491 14 18.9596 14H7.04304C6.55355 14 6.136 13.6457 6.05636 13.1627L4.84851 5.83731C4.76887 5.35434 4.35133 5 3.86183 5H2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 20C18.5523 20 19 19.5523 19 19C19 18.4477 18.5523 18 18 18C17.4477 18 17 18.4477 17 19C17 19.5523 17.4477 20 18 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16 7H10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <div class="recommend-item__popup popup recommend-item-popup">
+                  <div class="recommend-item-popup__content">
+                    <button class="recommend-item-popup__btn-close">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17.6569 17.6569L6.34319 6.34315" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M17.6568 6.34315L6.34311 17.6569" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="recommend-item-popup__slider-box">
+                      <div class="recommend-item-popup__small-slider">
+                        <div class="swiper-wrapper">
+                          <div class="recommend-item-popup__small-slider-item swiper-slide">
+                            <img src="images/product-slider/img1.jpg" alt="">
+                          </div>
+                          <div class="recommend-item-popup__small-slider-item swiper-slide">
+                            <img src="images/product-slider/img2.jpg" alt="">
+                          </div>
+                          <div class="recommend-item-popup__small-slider-item swiper-slide">
+                            <img src="images/product-slider/img3.jpg" alt="">
+                          </div>
+                          <div class="recommend-item-popup__small-slider-item swiper-slide">
+                            <img src="images/product-slider/img4.jpg" alt="">
+                          </div>
+                          <div class="recommend-item-popup__small-slider-item swiper-slide">
+                            <img src="images/product-slider/img3.jpg" alt="">
+                          </div>
+                          <div class="recommend-item-popup__small-slider-item swiper-slide">
+                            <img src="images/product-slider/img4.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="recommend-item-popup__big-slider">
+                        <div class="swiper-wrapper">
+                          <a class="recommend-item-popup__big-slider-item swiper-slide" href="#">
+                            <img src="images/product-slider/img1.jpg" alt="">
+                          </a>
+                          <a class="recommend-item-popup__big-slider-item swiper-slide" href="#">
+                            <img src="images/product-slider/img2.jpg" alt="">
+                          </a>
+                          <a class="recommend-item-popup__big-slider-item swiper-slide" href="#">
+                            <img src="images/product-slider/img3.jpg" alt="">
+                          </a>
+                          <a class="recommend-item-popup__big-slider-item swiper-slide" href="#">
+                            <img src="images/product-slider/img4.jpg" alt="">
+                          </a>
+                          <a class="recommend-item-popup__big-slider-item swiper-slide" href="#">
+                            <img src="images/product-slider/img1.jpg" alt="">
+                          </a>
+                          <a class="recommend-item-popup__big-slider-item swiper-slide" href="#">
+                            <img src="images/product-slider/img2.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recommend-item-popup__title">Сцена арочная 6х8 м</div>
+                    <div class="recommend-item-popup__subtitle">Артикул: 3120</div>
+                    <div class="product__price-wrapper price-wrapper">
+                      <div class="price-wrapper__head">от <span>73 500 ₽</span></div>
+                      <div class="price-wrapper__box">
+                        <div class="price-wrapper__box-item">
+                          <div>1 день</div>
+                          <span>73 500 ₽</span>
+                        </div>
+                        <div class="price-wrapper__box-item">
+                          <div>2 день</div>
+                          <span>72 500 ₽</span>
+                        </div>
+                        <div class="price-wrapper__box-item">
+                          <div>3 день</div>
+                          <span>70 500 ₽</span>
+                        </div>  
+                      </div>
+                    </div>
+                    <button class="recommend-item-popup__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21.2922 5L19.9463 13.1627C19.8666 13.6457 19.4491 14 18.9596 14H7.04304C6.55355 14 6.136 13.6457 6.05636 13.1627L4.84851 5.83731C4.76887 5.35434 4.35133 5 3.86183 5H2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20Z" stroke="white" stroke-width="2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 20C18.5523 20 19 19.5523 19 19C19 18.4477 18.5523 18 18 18C17.4477 18 17 18.4477 17 19C17 19.5523 17.4477 20 18 20Z" stroke="white" stroke-width="2"/>
+                        <path d="M16 7H10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M13 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                      В корзину
+                    </button>
+                    <p class="recommend-item-popup__text">
+                      Арочная сцена размером 6x8 м создаст впечатляющий фокусный пункт для вашего выездного мероприятия. Её изящная архитектура и красивая форма придают уникальность и стиль вашему мероприятию. Сцена прекрасно подходит для различных модных показов, выступлений артистов, презентаций и других специальных событий. Мы обеспечим надёжную конструкцию сцены, которая обеспечит безопасность и комфорт на сценической
+                    </p>
+                    <a class="recommend-item-popup__link" href="#">
+                      Вся информация
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 12L21 12" stroke="#002BDC" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M15 18L21 12L15 6" stroke="#002BDC" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__recommend-item recommend-item">
+                <div class="recommend-item--clickable">
+                  <div class="recommend-item__img">
+                    <img src="images/product/recommend-img2.jpg" alt="">
+                  </div>
+                  <div class="recommend-item__text-box">
+                    <div class="recommend-item__title">
+                      Сцена арочная 6х8 м
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="#BDBDBD"/>
+                        <path d="M8 12V9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C7.44772 4 7 4.44772 7 5C7 5.55228 7.44772 6 8 6C8.55228 6 9 5.55228 9 5C9 4.44772 8.55228 4 8 4Z" fill="white"/>
+                      </svg>
+                    </div>
+                    <div class="recommend-item__price"><span>от</span><span class="recommend-item__price-span">84 000 ₽</span><span>/ день</span></div>
+                  </div>
+                </div>
+                <button class="recommend-item__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21.2922 5L19.9463 13.1627C19.8666 13.6457 19.4491 14 18.9596 14H7.04304C6.55355 14 6.136 13.6457 6.05636 13.1627L4.84851 5.83731C4.76887 5.35434 4.35133 5 3.86183 5H2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 20C18.5523 20 19 19.5523 19 19C19 18.4477 18.5523 18 18 18C17.4477 18 17 18.4477 17 19C17 19.5523 17.4477 20 18 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16 7H10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                
+              </div>
+              <div class="product__desc-text-box">
+                <p class="product__text-desc">
+                  Сцена размером 6x8 м идеально подходит для выездных мероприятий, концертов, театральных представлений и других спектаклей. Наша сцена обладает прочной конструкцией, обеспечивающей безопасность и стабильность во время выступлений. 
+                </p>
+                <button class="product__text-desc-btn">Развернуть описание</button>
+              </div>
+              <div class="product__dropdown-item">
+                <div class="product__dropdown-head">
+                  Харктеристики
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                   </svg>
+                </div>
+                <div class="product__dropdown-content">
+                  <div class="product__params-row">
+                    <span class="product__params-row--dashed"></span>
+                    <span class="prop">Высота</span>
+                    <span class="value">6 м</span>
+                  </div>
+                  <div class="product__params-row">
+                    <span class="product__params-row--dashed"></span>
+                    <span class="prop">Ширина</span>
+                    <span class="value">8 м</span>
+                  </div>
+                  <div class="product__params-row">
+                    <span class="product__params-row--dashed"></span>
+                    <span class="prop">Глубина</span>
+                    <span class="value">8 м</span>
+                  </div>
+                  <div class="product__params-row">
+                    <span class="product__params-row--dashed"></span>
+                    <span class="prop">Цвет</span>
+                    <span class="value">Металлик</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product__dropdown-item">
+                <div class="product__dropdown-head">
+                  Оплата и доставка
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 10L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929L18 10" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                   </svg>
+                </div>
+                <div class="product__dropdown-content product__dropdown-content1">
+                  <div class="product__dropdown-content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M7 13L10 16L17 9" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2"/>
+                    </svg>
+                    <div class="dropdown-content-item__textbox">
+                      <div class="dropdown-content-item__title">Наличная оплата</div>
+                      <p class="dropdown-content-item__text">
+                        Предоставляются все необходимые платежные документы. Сделка также сопровождается общим пакетом документов: договор, акт приема-передачи, акт рекламации (в случае утери или порчи имущества).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__dropdown-content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M7 13L10 16L17 9" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2"/>
+                    </svg>
+                    <div class="dropdown-content-item__textbox">
+                      <div class="dropdown-content-item__title">Безналичная оплата</div>
+                      <p class="dropdown-content-item__text">
+                        Обеспечивается полным пакетом документов: счет, договор, акт выполненных работ, акт приема-передачи оборудования и акт рекламации (в случае утери или порчи имущества).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__dropdown-content-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1213 14.1214L16.9498 7.05032L9.8787 9.87874L7.05028 16.9498L14.1213 14.1214Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2"/>
+                    </svg>                      
+                    <div class="dropdown-content-item__textbox">
+                      <div class="dropdown-content-item__title">Доставка по Москве</div>
+                      <p class="dropdown-content-item__text">
+                        от 4 500 ₽
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__dropdown-content-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1213 14.1214L16.9498 7.05032L9.8787 9.87874L7.05028 16.9498L14.1213 14.1214Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2"/>
+                    </svg>                      
+                    <div class="dropdown-content-item__textbox">
+                      <div class="dropdown-content-item__title">Доставка по Московской области</div>
+                      <p class="dropdown-content-item__text">
+                        60 ₽ / за каждый километр от МКАД. Доставка за пределы Москвы и МО возможна!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__dropdown-content-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1213 14.1214L16.9498 7.05032L9.8787 9.87874L7.05028 16.9498L14.1213 14.1214Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2"/>
+                    </svg>                      
+                    <div class="dropdown-content-item__textbox">
+                      <div class="dropdown-content-item__title">Доставка фудтраков</div>
+                      <p class="dropdown-content-item__text">
+                        от 12 000 ₽
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dop">
+        <div class="container">
+          <div class="dop__title">Дополнительно</div>
+          <div class="dop__filters">
+            <div class="dop__filters-inner">
+              <a class="dop__filters-btn dop__filters-btn--active" href="#">Шатры</a>
+              <a class="dop__filters-btn" href="#">Техническая команда</a>
+              <a class="dop__filters-btn" href="#">Свет</a>
+              <a class="dop__filters-btn" href="#">Звук</a>
+              <a class="dop__filters-btn" href="#">Экраны и видео</a>
+              <a class="dop__filters-btn" href="#">Электричество</a>
+              <a class="dop__filters-btn" href="#">Подключение и разводка</a>
+              <a class="dop__filters-btn" href="#">Оформление</a>
+              <a class="dop__filters-btn" href="#">Безопасность</a>
+            </div>
+          </div>
+          <div class="dop__items">
+            <div class="dop__card">
+              <a class="dop__card-img" href="#">
+                <img src="images/dop/img1.jpg" alt="">
+              </a>
+              <div class="dop__card-content">
+                <a class="dop__card-title" href="#">Шатёр «Трансформер» 3х3 м</a>
+                <a class="dop__card-price" href="#">от <span>9 000 ₽</span>/ в день</a>
+                <button class="dop__card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M21.7922 5L20.4463 13.1627C20.3666 13.6457 19.9491 14 19.4596 14H7.54304C7.05355 14 6.636 13.6457 6.55636 13.1627L5.34851 5.83731C5.26887 5.35434 4.85133 5 4.36183 5H2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 20C9.05228 20 9.5 19.5523 9.5 19C9.5 18.4477 9.05228 18 8.5 18C7.94772 18 7.5 18.4477 7.5 19C7.5 19.5523 7.94772 20 8.5 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 20C19.0523 20 19.5 19.5523 19.5 19C19.5 18.4477 19.0523 18 18.5 18C17.9477 18 17.5 18.4477 17.5 19C17.5 19.5523 17.9477 20 18.5 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16.5 7H10.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13.5 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="dop__card">
+              <a class="dop__card-img" href="#">
+                <img src="images/dop/img1.jpg" alt="">
+              </a>
+              <div class="dop__card-content">
+                <a class="dop__card-title" href="#">Шатёр «Пагода» 5х5 м</a>
+                <a class="dop__card-price" href="#">от <span>9 000 ₽</span>/ в день</a>
+                <button class="dop__card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M21.7922 5L20.4463 13.1627C20.3666 13.6457 19.9491 14 19.4596 14H7.54304C7.05355 14 6.636 13.6457 6.55636 13.1627L5.34851 5.83731C5.26887 5.35434 4.85133 5 4.36183 5H2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 20C9.05228 20 9.5 19.5523 9.5 19C9.5 18.4477 9.05228 18 8.5 18C7.94772 18 7.5 18.4477 7.5 19C7.5 19.5523 7.94772 20 8.5 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 20C19.0523 20 19.5 19.5523 19.5 19C19.5 18.4477 19.0523 18 18.5 18C17.9477 18 17.5 18.4477 17.5 19C17.5 19.5523 17.9477 20 18.5 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16.5 7H10.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13.5 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="dop__card">
+              <a class="dop__card-img" href="#">
+                <img src="images/dop/img1.jpg" alt="">
+              </a>
+              <div class="dop__card-content">
+                <a class="dop__card-title" href="#">Шатёр «Трансформер» 3х3 м</a>
+                <a class="dop__card-price" href="#">от <span>9 000 ₽</span>/ в день</a>
+                <button class="dop__card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M21.7922 5L20.4463 13.1627C20.3666 13.6457 19.9491 14 19.4596 14H7.54304C7.05355 14 6.636 13.6457 6.55636 13.1627L5.34851 5.83731C5.26887 5.35434 4.85133 5 4.36183 5H2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 20C9.05228 20 9.5 19.5523 9.5 19C9.5 18.4477 9.05228 18 8.5 18C7.94772 18 7.5 18.4477 7.5 19C7.5 19.5523 7.94772 20 8.5 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 20C19.0523 20 19.5 19.5523 19.5 19C19.5 18.4477 19.0523 18 18.5 18C17.9477 18 17.5 18.4477 17.5 19C17.5 19.5523 17.9477 20 18.5 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16.5 7H10.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13.5 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="dop__card">
+              <a class="dop__card-img" href="#">
+                <img src="images/dop/img1.jpg" alt="">
+              </a>
+              <div class="dop__card-content">
+                <a class="dop__card-title" href="#">Шатёр «Пагода» 5х5 м</a>
+                <a class="dop__card-price" href="#">от <span>9 000 ₽</span>/ в день</a>
+                <button class="dop__card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M21.7922 5L20.4463 13.1627C20.3666 13.6457 19.9491 14 19.4596 14H7.54304C7.05355 14 6.636 13.6457 6.55636 13.1627L5.34851 5.83731C5.26887 5.35434 4.85133 5 4.36183 5H2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 20C9.05228 20 9.5 19.5523 9.5 19C9.5 18.4477 9.05228 18 8.5 18C7.94772 18 7.5 18.4477 7.5 19C7.5 19.5523 7.94772 20 8.5 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 20C19.0523 20 19.5 19.5523 19.5 19C19.5 18.4477 19.0523 18 18.5 18C17.9477 18 17.5 18.4477 17.5 19C17.5 19.5523 17.9477 20 18.5 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16.5 7H10.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13.5 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="dop__card">
+              <a class="dop__card-img" href="#">
+                <img src="images/dop/img1.jpg" alt="">
+              </a>
+              <div class="dop__card-content">
+                <a class="dop__card-title" href="#">Шатёр «Трансформер» 3х3 м</a>
+                <a class="dop__card-price" href="#">от <span>9 000 ₽</span>/ в день</a>
+                <button class="dop__card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M21.7922 5L20.4463 13.1627C20.3666 13.6457 19.9491 14 19.4596 14H7.54304C7.05355 14 6.636 13.6457 6.55636 13.1627L5.34851 5.83731C5.26887 5.35434 4.85133 5 4.36183 5H2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 20C9.05228 20 9.5 19.5523 9.5 19C9.5 18.4477 9.05228 18 8.5 18C7.94772 18 7.5 18.4477 7.5 19C7.5 19.5523 7.94772 20 8.5 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 20C19.0523 20 19.5 19.5523 19.5 19C19.5 18.4477 19.0523 18 18.5 18C17.9477 18 17.5 18.4477 17.5 19C17.5 19.5523 17.9477 20 18.5 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16.5 7H10.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13.5 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="dop__card">
+              <a class="dop__card-img" href="#">
+                <img src="images/dop/img1.jpg" alt="">
+              </a>
+              <div class="dop__card-content">
+                <a class="dop__card-title" href="#">Шатёр «Трансформер» 3х3 м</a>
+                <a class="dop__card-price" href="#">от <span>9 000 ₽</span>/ в день</a>
+                <button class="dop__card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M21.7922 5L20.4463 13.1627C20.3666 13.6457 19.9491 14 19.4596 14H7.54304C7.05355 14 6.636 13.6457 6.55636 13.1627L5.34851 5.83731C5.26887 5.35434 4.85133 5 4.36183 5H2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 20C9.05228 20 9.5 19.5523 9.5 19C9.5 18.4477 9.05228 18 8.5 18C7.94772 18 7.5 18.4477 7.5 19C7.5 19.5523 7.94772 20 8.5 20Z" stroke="white" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 20C19.0523 20 19.5 19.5523 19.5 19C19.5 18.4477 19.0523 18 18.5 18C17.9477 18 17.5 18.4477 17.5 19C17.5 19.5523 17.9477 20 18.5 20Z" stroke="white" stroke-width="2"/>
+                    <path d="M16.5 7H10.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13.5 4V10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommend">
+        <div class="container">
+          <div class="recommend__title">Похожие товары</div>
+          <div class="recommend__items">
+            <div class="swiper-wrapper">
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img " src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a class="recommend__item recommend-item swiper-slide hover-gallery-parent" href="#">
+                <div class="recommend__img-box hover-images-box">
+                  <div class="recommend-item__images hover-images">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/dop/img2.jpg" alt="">
+                    <img class="recommend-item__img hover-gallery-img" src="images/recommend/img1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="recommend-item__content">
+                  <div class="recommend-item__title">Сцена двускатная 6х8 м</div>
+                  <div class="recommend-item__price-box">
+                    <span>от</span>
+                    <span class="recommend-item__price">73 500 ₽</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="recomend-swiper-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3 12L21 12" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 18L21 12L15 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="recomend-swiper-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3 12L21 12" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 18L21 12L15 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <div class="promo">
+        <div class="promo--decor1">
+          <img src="images/promo-decor.svg" alt="">
+        </div>
+        <div class="promo__inner">
+          <div class="promo__title">Аренда  сценического оборудования для мероприятий</div>
+          <p class="promo__text">
+            Самые различные варианты сцены и подиум-конструкции для самых разных задач, мероприятия, режиссерских решений и эффектных показов.
+          </p>
+          <p class="promo__text">
+            Открытые подиумы и сцены возможны: различных форм, размеров и цветов со всевозможными вариантами покрытий, а также крышные системы (граунды) - арочные, двускатные туннельные собранные из оборудования Prolyte, Layher, Nivtec.
+          </p>
+          <button class="promo__btn">Оставить заявку</button>
+        </div>
+        <div class="promo--decor2">
+          <img src="images/promo-decor2.svg" alt="">
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top-wrapper">
+        <div class="container">
+          <div class="footer__top">
+            <a class="footer__top-link" href="#">Аренда сцены</a>
+            <a class="footer__top-link" href="#">Пультовая башня</a>
+            <a class="footer__top-link" href="#">Подъемник-элеватор</a>
+            <a class="footer__top-link" href="#">Спецэффекты</a>
+            <a class="footer__top-link" href="#">Подиумы</a>
+            <a class="footer__top-link" href="#">Звук</a>
+            <a class="footer__top-link" href="#">Свет</a>
+            <a class="footer__top-link" href="#">Видео</a>
+            <a class="footer__top-link" href="#">Плазмы</a>
+            <a class="footer__top-link" href="#">Планшеты</a>
+            <a class="footer__top-link" href="#">Шатры</a>
+            <a class="footer__top-link" href="#">Медиа</a>
+            <a class="footer__top-link" href="#">Гардероб</a>
+            <a class="footer__top-link" href="#">Флаги</a>
+            <a class="footer__top-link" href="#">Уличный декор</a>
+            <a class="footer__top-link" href="#">Декор для помещений</a>
+            <a class="footer__top-link" href="#">Обогреватели</a>
+            <a class="footer__top-link" href="#">Ограждения</a>
+            <a class="footer__top-link" href="#">Персонал</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bot-wrapper">
+        <div class="container">
+          <div class="footer__bot">
+            <a class="footer__bot-logo" href="#">
+              <span class="footer__logo-title">©2023  Название</span>
+              <span class="footer__logo-span">Аренда сцены</span>
+            </a>
+            <div class="footer__list-box">
+              <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Аренда сцены</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Аренда подиумов</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Звук</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Аренда шатров</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Медиа</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Аренда мебели</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Аренда генераторов</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Прочее</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__list-link" href="#">О нас</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Портфолио</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Контакты</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Кейтеринг</a></li>
+              </ul>
+            </div>
+            <div class="footer__contact-box">
+              <a class="footer__phone-link" href="tel:">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12.7408 18.4036L15.3055 15.8389C15.6481 15.4963 16.1871 15.4486 16.5846 15.7258L20.1353 18.2023C20.6459 18.5584 20.7106 19.2894 20.2704 19.7296L19.8841 20.1159C19.1739 20.8261 18.1547 21.1338 17.1986 20.826C15.1336 20.1613 11.3767 18.6179 8.26175 15.503C5.14678 12.388 3.6034 8.63109 2.93871 6.56614C2.63093 5.60999 2.93859 4.59084 3.64885 3.88058L4.03512 3.49432C4.47529 3.05415 5.20634 3.11879 5.56244 3.62937L8.03888 7.18011C8.3161 7.57758 8.26844 8.11661 7.92578 8.45927L5.36113 11.0239" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                +7 (911) 123-45-67
+              </a>
+              <a class="footer__contact-link" href="mailto:companyname@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 6L11.3356 13.4095C11.7145 13.7462 12.2855 13.7462 12.6644 13.4095L21 6" stroke="white" stroke-width="2"/>
+                  <rect x="2" y="5" width="20" height="14" rx="1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                companyname@gmail.com
+              </a>
+              <div class="footer__social">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8.71455 13.3173C3.24797 13.3173 0.129919 9.5696 0 3.3335H2.73829C2.82823 7.91064 4.84697 9.84942 6.44597 10.2492V3.3335H9.02436V7.28103C10.6034 7.11114 12.2623 5.31226 12.822 3.3335H15.4004C15.1895 4.35974 14.7691 5.33143 14.1655 6.18778C13.562 7.04414 12.7882 7.76674 11.8926 8.31039C12.8923 8.80713 13.7753 9.51024 14.4833 10.3733C15.1913 11.2364 15.7082 12.2397 16 13.3173H13.1618C12.8999 12.3814 12.3676 11.5436 11.6316 10.9089C10.8956 10.2742 9.9886 9.87092 9.02436 9.74949V13.3173H8.71455Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M12.7831 9.84616C13.1577 9.47157 13.2112 8.93646 12.8901 8.40134C12.6225 7.97325 12.1409 7.7592 11.6058 7.86622C11.3918 7.91974 11.1777 8.02676 10.9637 8.1873C9.30482 9.31104 7.05733 9.25753 5.39847 8.13378C5.29145 8.08027 5.18442 8.02676 5.0774 7.97325C4.48877 7.70569 3.90014 7.81272 3.57907 8.34783C3.20449 8.88295 3.258 9.47158 3.7396 9.95318C3.84663 10.0602 3.95365 10.1137 4.00716 10.2207L4.06068 10.2743C4.80984 10.8629 5.71954 11.2375 6.8968 11.398L6.20114 12.0937C5.61252 12.6823 4.97038 13.3244 4.38175 13.913C4.22121 14.0736 4.00716 14.3411 4.00716 14.7157C4.00716 15.1973 4.27472 15.6789 4.75633 15.893C4.91686 16 5.0774 16 5.23793 16C5.50549 16 5.82656 15.893 6.04061 15.6254C6.84328 14.8227 7.48543 14.1806 8.12757 13.5385C8.18108 13.485 8.18108 13.485 8.18108 13.485C8.18108 13.485 8.23459 13.485 8.23459 13.5385C8.66268 14.0201 9.14429 14.4482 9.57238 14.9298C9.78643 15.1438 10.0005 15.3579 10.2145 15.5719C10.4821 15.8395 10.6961 15.9465 11.0172 15.9465C11.4988 16 12.0339 15.6789 12.248 15.1973C12.462 14.7692 12.355 14.2341 11.9804 13.913C11.4453 13.3779 10.9102 12.7893 10.3215 12.2542L9.41185 11.3445C9.89345 11.291 10.4286 11.184 10.9102 10.9699C11.7129 10.7023 12.3015 10.3278 12.7831 9.84616Z" fill="white"/>
+                    <path d="M8.18107 8.34783C10.4821 8.34783 12.355 6.52842 12.355 4.22742C12.355 3.10367 11.9269 2.03345 11.1242 1.23077C10.3215 0.428095 9.30482 0 8.23459 0C5.93359 0 4.11419 1.87291 4.06068 4.1204C4.06068 5.24414 4.48877 6.26087 5.29145 7.06354C6.04061 7.91973 7.05733 8.34783 8.18107 8.34783ZM7.00382 2.99666C7.32489 2.67559 7.75298 2.51505 8.18107 2.51505C9.14429 2.51505 9.83994 3.26421 9.83994 4.17391C9.83994 5.13712 9.09077 5.83277 8.18107 5.83277C7.21786 5.83277 6.52222 5.08361 6.52222 4.17391C6.52222 3.74582 6.68275 3.31773 7.00382 2.99666Z" fill="white"/>
+                    <path d="M12.7831 9.84616C13.1577 9.47157 13.2112 8.93646 12.8901 8.40134C12.6225 7.97325 12.1409 7.7592 11.6058 7.86622C11.3918 7.91974 11.1777 8.02676 10.9637 8.1873C9.30482 9.31104 7.05733 9.25753 5.39847 8.13378C5.29145 8.08027 5.18442 8.02676 5.0774 7.97325C4.48877 7.70569 3.90014 7.81272 3.57907 8.34783C3.20449 8.88295 3.258 9.47158 3.7396 9.95318C3.84663 10.0602 3.95365 10.1137 4.00716 10.2207L4.06068 10.2743C4.80984 10.8629 5.71954 11.2375 6.8968 11.398L6.20114 12.0937C5.61252 12.6823 4.97038 13.3244 4.38175 13.913C4.22121 14.0736 4.00716 14.3411 4.00716 14.7157C4.00716 15.1973 4.27472 15.6789 4.75633 15.893C4.91686 16 5.0774 16 5.23793 16C5.50549 16 5.82656 15.893 6.04061 15.6254C6.84328 14.8227 7.48543 14.1806 8.12757 13.5385C8.18108 13.485 8.18108 13.485 8.18108 13.485C8.18108 13.485 8.23459 13.485 8.23459 13.5385C8.66268 14.0201 9.14429 14.4482 9.57238 14.9298C9.78643 15.1438 10.0005 15.3579 10.2145 15.5719C10.4821 15.8395 10.6961 15.9465 11.0172 15.9465C11.4988 16 12.0339 15.6789 12.248 15.1973C12.462 14.7692 12.355 14.2341 11.9804 13.913C11.4453 13.3779 10.9102 12.7893 10.3215 12.2542L9.41185 11.3445C9.89345 11.291 10.4286 11.184 10.9102 10.9699C11.7129 10.7023 12.3015 10.3278 12.7831 9.84616Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot--images-bg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="294" height="171" viewBox="0 0 294 171" fill="none">
+            <g filter="url(#filter0_f_1126_4361)">
+            <ellipse cx="40" cy="80" rx="40" ry="80" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 214.706 135.568)" fill="#07683A"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_1126_4361" x="-33.4067" y="0.593262" width="326.519" height="326.519" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1126_4361"/>
+            </filter>
+            </defs>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="327" height="171" viewBox="0 0 327 171" fill="none">
+            <g filter="url(#filter0_f_1126_4362)">
+            <ellipse cx="163.558" cy="163.853" rx="40" ry="80" transform="rotate(-45 163.558 163.853)" fill="#002BDC"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_1126_4362" x="0.299072" y="0.593262" width="326.519" height="326.519" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1126_4362"/>
+            </filter>
+            </defs>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="327" height="171" viewBox="0 0 327 171" fill="none">
+            <g filter="url(#filter0_f_1126_4363)">
+            <ellipse cx="40" cy="80" rx="40" ry="80" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 248.117 135.568)" fill="#8008A4"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_1126_4363" x="0.00439453" y="0.593262" width="326.519" height="326.519" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1126_4363"/>
+            </filter>
+            </defs>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="293" height="171" viewBox="0 0 293 171" fill="none">
+            <g filter="url(#filter0_f_1126_4364)">
+            <ellipse cx="163.97" cy="163.853" rx="40" ry="80" transform="rotate(-45 163.97 163.853)" fill="#002BDC"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_1126_4364" x="0.710449" y="0.593262" width="326.519" height="326.519" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1126_4364"/>
+            </filter>
+            </defs>
+          </svg>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/libs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/hoverGallery.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>  
